@@ -1,0 +1,14 @@
+[
+  {
+    "id": "status",
+    "execute-command": "/bin/bash",
+    "command-working-directory": ".",
+    "pass-arguments-to-command": [
+      {"source": "string", "name": "-c"},
+      {"source": "string", "name": "echo '{\"status\":\"ok\"}'"}
+    ],
+    "response-headers": [
+      {"name": "Content-Type", "value": "application/json"}
+    ]
+  }
+]

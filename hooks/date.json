@@ -1,0 +1,14 @@
+[
+  {
+    "id": "date",
+    "execute-command": "/bin/bash",
+    "command-working-directory": ".",
+    "pass-arguments-to-command": [
+      {"source": "string", "name": "-c"},
+      {"source": "string", "name": "date -Iseconds"}
+    ],
+    "response-headers": [
+      {"name": "Content-Type", "value": "text/plain"}
+    ]
+  }
+]
